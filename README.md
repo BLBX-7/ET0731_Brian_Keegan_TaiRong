@@ -2,4 +2,4 @@
 
 This is our IOTS mini project
 
-<a href = "GrpG_v1.pdf">Group G Proposal </a>
+<a href = "GrpG_ver1.pdf">Group G Proposal </a>
