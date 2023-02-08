@@ -1,7 +1,7 @@
 # Description </br>
 The replacing for the need of a traditional key and shaft (key and lock), our Android Application is the newest
 and most mordern way to unlocking a door. The complete removal for the need of a key to unlock a door
-amplifies convenience, accessibility and security. 
+amplifies convenience, accessibility and security. </br>
 
 ## Sections covered: 
 1 - Things needed </br>
