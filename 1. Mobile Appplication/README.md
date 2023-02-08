@@ -4,7 +4,7 @@ and most mordern way to unlocking a door. The complete removal for the need of a
 amplifies convenience, accessibility and security. 
 
 # Things needed 
-1. Android phone with internet/cellular connectivity
+1. Android phone with internet/cellular connectivity.
 
 # Steps to unlock door with Application </br>
 1. User-login details to be provided on start up of Application. If identity
