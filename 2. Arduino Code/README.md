@@ -23,6 +23,6 @@ Upon unlocking via application, the door works as follows...
 
 # Hardware Integration </br>
 - Front View:
-![- Front View](/Images/HardwareConnections.jpeg) </br>
+![- Front View](/Img/HardwareConnections.jpeg) </br>
 - Side View:
-![- Side View](/Images/HardwareConnections_2.jpeg)
+![- Side View](/Img/HardwareConnections_2.jpeg)
