@@ -5,19 +5,19 @@ A Checklist is important in assessing how secure the IoT based project is. Below
 
 ## Attack Surface 1: Phone App
 ### Checklist:
-- TR 64 : CS-01**[done]**
+- TR 64 : CS-01 **[done]**
 
 	- Random number generator employed 
     
 application uses an online random number generator for OTP
      
-- TR 64 : AP-01**[done]**
+- TR 64 : AP-01 **[done]**
 
 	- Lock-out mechanism employed
 
 User will get locked out after 3 incorrect attempts in the log in page.
 
-- TR 64 : AP-02**[done]**
+- TR 64 : AP-02 **[done]**
 
 	- Multi-factor authentication 
 
@@ -26,7 +26,7 @@ User will get locked out after 3 incorrect attempts in the log in page.
 
 ## Attack Surface 2: Amazon Web Service(AWS)
 ### Checklist:
-- TR 64 : DP-04**[done]**
+- TR 64 : DP-04 **[done]**
 
     - Access control mechanisms employed 
 
@@ -41,26 +41,18 @@ For both user and root access, 2FA is employed through the AWS' google authentic
 
       
 - TR 64 : MT-01 **[done]**
+	
+	- Stong Password policy is enforced for user login
 
-    - Stong Password policy is enforced for user login
+For user and root accounts, it uses AWS' default Password Policy
 
-For user and root accounts, it uses the following default password policy:
-
-   - Password minimum length of 8 characters
-
-Password strength will include a minimum of three of the following mix of character types:
-   - Uppercase
-   - Lowercase
-   - Numbers
-   - Non-alphanumeric characters ( ! @ # $ % ^ & * ( ) _ + - = [ ] {} | ' )
-
--TR 64: RS-03 **[done]**
+- TR 64: RS-03 **[done]**
 
    - AWS Shield employed
    
 AWS Shield Standard defends against most common, frequently occurring network and transport layer DDoS attacks.
 
--TR 64: AU-01 **[done]**
+- TR 64: AU-01 **[done]**
 
    - significant events recorded
    
@@ -81,7 +73,7 @@ It encrypts the entire database using an AES encryption algorithm.
 
 The users password and email has been hashed in the database and the communication between the user and database is encrypted
     
-- TR 64 : NP-03
+- TR 64: NP-03
 
   - Transport layer security employed
    
@@ -112,24 +104,17 @@ Azure SQL database has a event logging service which allows administrators to se
 
 - TR 64 : NP-04
 
- - Secure connectivity with MQTT
+	- Secure connectivity with MQTT
 
 We are sending our MQTT messages over port 8883 also known as TLS port.
 
-## Attack Surface 4: ThingSpeak cloud
-
-- TR 64 : NP-04
-
- - Secure connectivity with MQTT
-
-We are sending our MQTT messages over port 8883 also known as TLS port.
 
 
 ## Attack Surface 5: ESP32
 
 - TR 64 : NP-04
 
- - Secure connectivity with MQTT
+	- Secure connectivity with MQTT
 
 We are sending our MQTT messages over port 8883 also known as TLS port.
 
