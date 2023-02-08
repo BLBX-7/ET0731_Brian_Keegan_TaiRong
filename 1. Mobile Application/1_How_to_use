@@ -1,3 +1,0 @@
-# Pre-requisites
-1. To have added the Android phone's (where the app will run on) public IP address into Azure SQL Server's whitelist firewall.
-2. 
