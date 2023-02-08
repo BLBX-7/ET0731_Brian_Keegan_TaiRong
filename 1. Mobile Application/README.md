@@ -3,11 +3,11 @@ The replacing for the need of a traditional key and shaft (key and lock), our An
 and most mordern way to unlocking a door. The complete removal for the need of a key to unlock a door
 amplifies convenience, accessibility and security. 
 
-## Sections covered:
-1 - Things needed
-2 - Steps to unlock door with Application
-3 - Cloud services used in Application
-4 - Algorithm of Application
+## Sections covered: 
+1 - Things needed </br>
+2 - Steps to unlock door with Application </br>
+3 - Cloud services used in Application </br>
+4 - Algorithm of Application </br>
 
 # 1 - Things needed 
 1. Android phone with internet/cellular connectivity.
