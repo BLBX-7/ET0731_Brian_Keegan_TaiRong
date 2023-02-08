@@ -1,5 +1,5 @@
 # Description </br>
-Our ESP8266 is the main physical mechanism, in charge of locking and securing the place of
+Our Arduino ESP8266 is the main physical mechanism, in charge of locking and securing the place of
 interest. It will be controlled, via the internet, by the Android application. 
 
 # Devices Needed </br>
@@ -26,3 +26,7 @@ Upon unlocking via application, the door works as follows...
 ![- Front View](/Img/HardwareConnections.jpeg) </br>
 - Side View:
 ![- Side View](/Img/HardwareConnections_2.jpeg)
+
+### ESP32-Camera Circuit Diagram
+![ESP32-Camera Ciruit Diagram](/Img/ESP32Cam.jpeg)
+</br>
