@@ -25,7 +25,7 @@ The Phone application will generate an OTP and send it to Amazon Web Services' s
 
 	- User's Password and Email is hashed in database
  
-User will input their username and password in the login page, as the SQL database has the hashed variant of the user's credentials, it will convert the password's plain text, to its hashed form and compare with the password in the database before authorising the user to login.
+User will input their username and password at the login page, and as the SQL database has the hashed variant of the user's credentials, it (the Phone app) will convert the user inputted email and password (in plain text form) to its hashed form before comparing it with the hashed credentials stored in the database. 
      
 - TR 64 : AP-01 **[done]**
 
@@ -37,7 +37,7 @@ attacker will attempt a brute-force attack to login into the app. With the lock-
 
 	- Multi-factor authentication 
 
-2 forms authentication(2FA), first requiring a user login which includes attempts with username and password. Second is an OTP sent to their registered email as a form of 2FA.   
+2 Factor Authentication (2FA), first requiring a user to login with his/her register email and complex password. Second is an OTP sent to their registered email as the form of 2FA.   
 
 
 ## Attack Surface 2: Amazon Web Service(AWS)
