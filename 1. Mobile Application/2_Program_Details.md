@@ -37,7 +37,7 @@ With that knowledge in mind, this is the detailed application flow diagram:
 1. An AWS SES account       [Free for students] </br>
 2. Azure Server + Database  [Free for students] </br>
 3. ThingSpeak MQTT Broker with credentials for publisher created </br>
-The credentials of a publisher should not be the same of that the subscriber.
+The credentials of a ThingSpeak MQTT publisher should not be the same of that a ThingSpeak MQTT subscriber.
 
 ## 3.2. - Project prerequisites
 ### Files needed for project:
@@ -74,5 +74,15 @@ dependencies {
 }
 ```
 
-## 3.3. - Descriptive program flow
+## 3.3. - Activtiy 1: authentication_page
+### This is the launcher activity of the application. Users will always have to login when application first loads up. Appropriate comments have been made in the program for a deeper understanding of the activity, however, the important functions and class of the activity will be:
+```java
+1. byte[] getHash(String toHash): Getting hash of credentials to compare with ones stored in DB
+2. String lockout(): Locks user out of inputting if max attempts reached
+3. class CheckLogin: Retrieves already-hashed user credentials from Azure DB to validate hashed user-inputted credentials
+```
+
+## 3.4. - Activity 2: email_otp
+### This is the activity where our application first generates an OTP, then sends it to AWS SES, who will then send the OTP to the user email inputted at 'authentication_page' activity. The important functions and class
+
 (Show image of program flow followed by the trust boundary)
