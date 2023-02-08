@@ -4,9 +4,9 @@ and most mordern way to unlocking a door. The complete removal for the need of a
 amplifies convenience, accessibility and security. </br>
 
 ## Sections covered: 
-1 - Things needed </br>
-2 - Steps to unlock door with Application </br>
-3 - Application documentation </br>
+1. Things needed </br>
+2. Application flow </br>
+3. Application documentation </br>
 
 # 1 - Things needed 
 1. Android phone with internet/cellular connectivity
@@ -29,11 +29,26 @@ With that knowledge in mind, this is the detailed Application flow diagram:
 ![Application flow diagram](Img/App_flow.JPG)
 
 # 3 - Application documentation
-## 3.1. - Project prerequisites
-### Files needed for project + Accounts in need of creation (Link the AWS SES)
-(Talk about the jar files and cert)
-### Dependencies needed for project
-(Show code of dependencies added to project)
+## 3.1. - Accounts needed
+### The accounts created to support this project will be:
+1. An AWS SES account       [Free for students] </br>
+2. Azure Server + Database  [Free for students] </br>
+3. ThingSpeak MQTT Broker with credentials for publisher created </br>
+The credentials of a publisher should not be the same of that the subscriber.
 
-## 3.2. - Descriptive program flow
+## 3.2. - Project prerequisites
+### Files needed for project
+(Talk about the jar files and cert)</br>
+The following are the important files that need to be imported into your Android Studio /res/raw folder: 
+</br>[Click here to download them](https://drive.google.com/drive/folders/1ylXdT9n1k2ODEw0C6G8MaT9ejocXsvMl?usp=sharing)</br>
+1. javax.activation.jar (Jar file to support AWS SES) </br>
+2. javax.additionnal.jar (Jar file to support AWS SES) </br>
+3. javax.activation.jar (Jar file to support AWS SES) </br>
+4. thingspeakcert.crt (Certificate of ThingSpeak to enable TLS/SSL communication through App) </br>
+</br>
+### Dependencies needed for project
+The following is are the dependencies needed for the build.gradle file of your Android Studio project:
+```Test```
+
+## 3.3. - Descriptive program flow
 (Show image of program flow followed by the trust boundary)
