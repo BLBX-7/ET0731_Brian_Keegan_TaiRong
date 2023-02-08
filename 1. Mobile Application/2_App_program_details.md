@@ -106,4 +106,4 @@ dependencies {
 ```
 
 # Next Up
-<a href = "/2. Arduino Code/README.md">Arduino: README.md</a>
+<a href = "/2. Arduino Code/3_How_smart_lock_works.md">3: How smart lock works</a>
