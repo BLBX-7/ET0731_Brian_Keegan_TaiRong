@@ -10,7 +10,7 @@ interest. It will be controlled, via the internet, by the Android application.
 
 # Door Algorithm </br>
 Upon unlocking via application, the door works as follows...
-1. Smart Door is locked with the servo motor at a certain position.
+1. Initiallly, Smart Door is locked with the servo motor at its lock position.
 2. ESP8266 subscribe to ThingSpeak MQTT broker to wait for the message "unlocked".
 3. Upon receiving "unlocked" MQTT message, servo motor turns to unlock the smart door.
 4. Once the door is unlocked, it will wait for the door to open.
