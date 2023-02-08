@@ -6,7 +6,7 @@ A Checklist is important in assessing how secure the IoT based project is. Below
 Attack Surface|TR64 Reference|Description
 --------------|--------------|-----------
 Phone app|CS-01, IA-01, AP-01, AP-02|Employment of random number generator, secure storage of user credentials, protection against repeated attempts & Multi factor Authentication 
-Amazon Web Service|DP-04, AP-02, MT-01, RS-03, UA-01|Access control mechanism, Multi-factor Authentication, Strong password policies, able to withstand malicious attacks & significant events recorded
+Amazon Web Service|DP-04, AP-02, MT-01, RS-03, UA-01|Access control mechanism, Multi-Factor Authentication, Strong password policies, able to withstand malicious attacks & significant events recorded
 Azure SQL Database|CS-03, IA-01, NP-03, NP-04, RS-04, AU-01|AES encryption, Client credential's stored securely, transport layer security employed, Whitelisting, regular backup of system data, significant events recorded
 Thingspeak Cloud|NP-04|secure connectivity based on industry best practices
 ESP32||
