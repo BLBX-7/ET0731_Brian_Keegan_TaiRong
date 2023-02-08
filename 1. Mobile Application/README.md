@@ -49,8 +49,7 @@ The following are the important files that need to be imported into your Android
 ### Dependencies needed for project
 The following is are the dependencies needed for the build.gradle file of your Android Studio project:
 ```
-Test
+Testing
 ```
-
 ## 3.3. - Descriptive program flow
 (Show image of program flow followed by the trust boundary)
