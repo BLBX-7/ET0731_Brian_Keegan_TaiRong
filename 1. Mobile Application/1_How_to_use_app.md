@@ -39,4 +39,4 @@ After going through this, it is strongly recommended that you go through [2_Prog
 # App flow
 
 # Next Up
-[2: App program details](2_App_Program_Details.md)
+[2: App program details](2_App_program_details.md)
