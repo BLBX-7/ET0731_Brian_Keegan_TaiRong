@@ -98,7 +98,7 @@ We have made use of Azure SQL database's firewall rules to only allow IP address
  
   - Back-up system deployed
 
-Azure SQL database has a service and compute tier, which allows for backup storage redundancy
+Azure SQL database, by default, automatically backs up the databases with no user action needed
 
 - TR 64: AU-01 **[done]**
 
@@ -116,7 +116,6 @@ Azure SQL database has a event logging service which allows administrators to se
 We are sending our MQTT messages over port 1883 also known as TLS port. (Employing TLS when using MQTT)
 
 
-
 ## Attack Surface 5: ESP32
 
 - TR 64 : NP-04 **[done]**
@@ -125,9 +124,8 @@ We are sending our MQTT messages over port 1883 also known as TLS port. (Employi
 
 We are sending our MQTT messages over port 8883 also known as TLS port.
 
-
     
-## Attack Surface 4; System as a whole (REALLY NOT SURE)
+## Attack Surface 6; System as a whole (REALLY NOT SURE)
 ### Checklist:
 - TR 64 : LP-01  **[done]**
 
