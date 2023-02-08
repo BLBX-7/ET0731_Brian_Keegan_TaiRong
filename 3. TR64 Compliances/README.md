@@ -102,13 +102,13 @@ Using SHA256, we hashed the user's email and password and saved it to the databa
 
   - Transport layer security employed
    
-Azure SQL database will enforce encryption (SSL/TLS) at all times for all connections. This ensures all data is encrypted "in transit" between the user and server irrespective of the setting of Encrypt or TrustServerCertificate in the connection string
+Azure SQL database will enforce encryption (SSL/TLS) at all times for all connections. This ensures all data is encrypted and secured "in transit" between the user and server because of the connection string used: Encrypt=True and TrustServerCertificate=False. 
 
 - TR 64: NP-04 **[done]**
 
   - Secure connectivity using whitelisting
    
-We have made use of Azure SQL database's firewall rules to only allow IP addresses, set in the SQL server, to access the database (essentially a whitelist)
+We have made use of Azure SQL database's firewall rules to only allow IP addresses, set in the SQL server, to access the database (essentially a whitelist). 
     
 - TR 64: RS-04 **[done]**
  
@@ -129,7 +129,7 @@ Azure SQL database has a event logging service which allows administrators to se
 
 	- Secure connectivity with MQTT
 
-We are sending our MQTT messages over port 1883 also known as TLS port. (Employing TLS when using MQTT)
+We are sending our MQTT messages over port 8883 also known as TLS port. (Employing TLS when using MQTT)
 
 
 ## Attack Surface 5: ESP32
