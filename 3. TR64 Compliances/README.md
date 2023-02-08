@@ -3,12 +3,14 @@
 
 A Checklist is important in assessing how secure the IoT based project is. Below is a compliance checklist we adhered to.
 
-Attack Surface|CheckList|TR64 Reference|Description
---------------|---------|--------------|-----------
-Phone app| |CS-01, AP-01, AP-02|Can withstand malicious attacks, User credentials are hashed
-Web Server|Secured login using 2FA, Data is not stored in clear text, Secure Communications|AP-02, CS-01, DP-03, RS-03|2 Factor Authentication with email, Proper random number generation is employed for OTP, User password is salted and hashed, Server uses HTTPS
-ESP32|Tamper-proof Enclosure, No exposed joints/connectors to open device, Secure Communications|AP-04, AP-03, RS-03|Enclosure is not easily tampered with, Exposed ports are sealed off, ESP32 uses MQTTS
-Entire System|Identify and analyse threats to an Iot system, System designed in a secure way|LP-01, LP-02|Conducted threat modeling to identify threats, System is designed and developed using secure systems engineering approach and best practices
+Attack Surface|TR64 Reference|Description
+--------------|--------------|-----------
+Phone app|CS-01, IA-01, AP-01, AP-02|employment of random number generator, secure storage of user credentials, protection against repeated attempts & Multi factor Authentication 
+Amazon Web Service|DP-04, AP-02, MT-01, RS-03, UA-01|Access control mechanism, Multi-factor Authentication, Strong password policies, able to withstand malicious attacks & significant events recorded
+Azure SQL Database|CS-03, IA-01, NP-03, NP-04, RS-04, AU-01|AES encryption, Client credential's stored securely, transport layer security employed, Whitelisting, regular backup of system data, significant events recorded
+Thingspeak Cloud|NP-04|secure connectivity based on industry best practices
+ESP32||
+Entire System|LP-01, LP-02, LP-07|Conducted threat modeling to identify threats, System is designed and developed using secure systems engineering approach and best practices, Penetration-testing and vulnerability assessment
 
 
 ## Attack Surface 1: Phone App
@@ -23,7 +25,7 @@ The Phone application will generate an OTP and send it to Amazon Web Services' s
 
 	- User's Password and Email is hashed in database
  
-User will input their username and password in the login page, as the SQL database has the hashed variant of the user's credentials, it will convert the password's plain text to its hashed form and compare with the password in the database. 
+User will input their username and password in the login page, as the SQL database has the hashed variant of the user's credentials, it will convert the password's plain text, to its hashed form and compare with the password in the database before authorising the user to login.
      
 - TR 64 : AP-01 **[done]**
 
@@ -132,11 +134,6 @@ We are sending our MQTT messages over port 1883 also known as TLS port. (Employi
 
 ## Attack Surface 5: ESP32
 
-- TR 64 : NP-04 **[done]**
-
-	- Secure connectivity with MQTT
-
-We are sending our MQTT messages over port 8883 also known as TLS port.
 
     
 ## Attack Surface 6; System as a whole (REALLY NOT SURE)
@@ -151,3 +148,11 @@ We are sending our MQTT messages over port 8883 also known as TLS port.
     - System designed in a secure way **[done]**
     
     All HTTP and MQTT versions of the web app has been changed to HTTPS and MQTTS, some prototyping ideas such as ESP32 web server has also been abolished in order to decerase attack surface
+    
+- TR 64 : LP-07 
+
+    - Penetration-testing or vulnerability assessment conducted **[done]**
+
+Through the use of Kali linux and other theoratical attacks, we were able to assess the vulnerability of our system.
+    
+  
