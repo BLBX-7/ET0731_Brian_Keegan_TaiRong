@@ -3,6 +3,14 @@
 
 A Checklist is important in assessing how secure the IoT based project is. Below is a compliance checklist we adhered to.
 
+Attack Surface|CheckList|TR64 Reference|Description
+--------------|---------|--------------|-----------
+Phone app| |CS-01, AP-01, AP-02|Can withstand malicious attacks, User credentials are hashed
+Web Server|Secured login using 2FA, Data is not stored in clear text, Secure Communications|AP-02, CS-01, DP-03, RS-03|2 Factor Authentication with email, Proper random number generation is employed for OTP, User password is salted and hashed, Server uses HTTPS
+ESP32|Tamper-proof Enclosure, No exposed joints/connectors to open device, Secure Communications|AP-04, AP-03, RS-03|Enclosure is not easily tampered with, Exposed ports are sealed off, ESP32 uses MQTTS
+Entire System|Identify and analyse threats to an Iot system, System designed in a secure way|LP-01, LP-02|Conducted threat modeling to identify threats, System is designed and developed using secure systems engineering approach and best practices
+
+
 ## Attack Surface 1: Phone App
 ### Checklist:
 - TR 64 : CS-01 **[done]**
@@ -10,6 +18,12 @@ A Checklist is important in assessing how secure the IoT based project is. Below
 	- Random number generator employed 
     
 The Phone application will generate an OTP and send it to Amazon Web Services' simple email service(SES), the generated OTP will then be sent to the user's email, user keys in the OTP and is able to enter the application. Confirming it is him/her.
+
+- TR 64 : IA-01 **[done]**
+
+	- User's Password and Email is hashed in database
+ 
+User will input their username and password in the login page, as the SQL database has the hashed variant of the user's credentials, it will convert the password's plain text to its hashed form and compare with the password in the database. 
      
 - TR 64 : AP-01 **[done]**
 
