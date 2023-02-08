@@ -36,5 +36,7 @@ After going through this, it is strongly recommended that you go through [2_Prog
 1.1. If you have forgotten your password, you can regenerate it with the following steps:
 ![ThingSpeak credentials regeneration](Img/Azure_SMTPCredentialRegen.JPG)
 
+# App flow
+
 # Next Up
-[2_Program_Details.md](2_Program_Details.md)
+[2: App program details](2_App_Program_Details.md)
