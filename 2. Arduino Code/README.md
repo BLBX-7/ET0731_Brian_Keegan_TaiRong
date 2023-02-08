@@ -20,3 +20,9 @@ Upon unlocking via application, the door works as follows...
 7. Ultra-sonic sensor reads below distance threshold to indicate that door is closed.
 8. Once door is closed, it will auto-lock the door but turning the servo motor.
 9. Wait for MQTT message "unlocked" again.
+
+# Hardware Integration </br>
+- Front View:
+![- Front View](/Images/HardwareConnections.jpeg) </br>
+- Side View:
+![- Side View](/Images/HardwareConnections_2.jpeg)
