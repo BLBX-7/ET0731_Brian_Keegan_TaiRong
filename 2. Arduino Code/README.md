@@ -13,7 +13,7 @@ Upon unlocking via application, the door works as follows...
 1. Initiallly, Smart Door is locked with the servo motor at its lock position.
 2. ESP8266 subscribe to ThingSpeak MQTT broker to wait for the message "unlocked".
 3. Upon receiving "unlocked" MQTT message, servo motor turns to unlock the smart door.
-4. Once the door is unlocked, it will keep waiting for the door, through the use of an ultra-sonic sensor
+4. Once the door is unlocked, it will keep waiting for the door, through the use of an ultra-sonic sensor.
 4. Ultra-sonic sensor reads above a certain distance threshold to indicate that door is open.
 5. Once the door is opened, inititate picture taking of doorway via ESP32-Camera.
 6. While door is opened, wait until door is closed.
