@@ -11,7 +11,8 @@ amplifies convenience, accessibility and security. This application features 3 a
 2. Application flow </br>
 3. Application documentation </br>
 
-# 1 - Things needed: (Refer to [1_How_to_use.md](1_How_to_use.md))
+# 1 - Things needed:
+(Refer to [1_How_to_use.md](1_How_to_use.md))
 1. Android phone with internet/cellular connectivity
 2. AWS Simple Email Service (SES): For sending of generated OTP to respective user
 3. Azure SQL Server + Database: For storing of hashed user credentials 
@@ -106,4 +107,3 @@ dependencies {
 
 # Next Up
 <a href = "/2. Arduino Code/README.md">Arduino: README.md</a>
-[Arduino: README.md]("/2. Arduino Code/README.md")
