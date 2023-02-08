@@ -50,8 +50,16 @@ The following are the important files that need to be imported into your Android
 4. thingspeakcert.crt     (Certificate of ThingSpeak to enable TLS/SSL communication through App)
 ```
 
+### User permissions needed for project:
+The following are required to be added into the Android Studio's AndroidManifest.xml file:
+```java
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+```
+
 ### Dependencies needed for project:
-The following is are the dependencies needed for the build.gradle file of your Android Studio project:
+The following are the dependencies needed for the build.gradle file of your Android Studio project:
 ```java
 dependencies {
     //Added dependencies:
