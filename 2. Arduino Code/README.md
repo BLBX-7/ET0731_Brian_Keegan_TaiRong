@@ -17,7 +17,7 @@ Upon unlocking via application, the door works as follows...
 4. Ultra-sonic sensor reads above a certain distance threshold to indicate that door is open.
 5. Once the door is opened, picture of locker will be taken via ESP32-Camera.
 6. While door is opened, wait until door is closed.
-7. Ultra-sonic sensor reads below distance threshold to indicate that door is closed.
+7. Ultra-sonic sensor keeps reading distance threshold, waiting for it to turn small again to indicate that door is closed.
 8. Once door is closed, it will auto-lock the door but turning the servo motor.
 9. Wait for MQTT message "unlocked" again.
 
