@@ -1,5 +1,5 @@
 # Description
-This documentation will walk you through the steps to get the project Android application up and running. The things needing change in the Android application program have been marked with the comment "*TO SUPPLY OWN INFORMATION HERE:*".</br>
+This documentation will walk you through the steps to get the project Android application up and running. The things needing change in the Android application program have been marked with the comment "*TO SUPPLY OWN INFORMATION HERE:*" in the project code.</br>
 After going through this, it is strongly recommended that you go through [2_Program_Details.md](2_Program_Details.md) to get a better understanding of the appliation program and how it works.
 
 # Pre-requisites
