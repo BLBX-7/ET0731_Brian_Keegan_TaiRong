@@ -76,13 +76,24 @@ dependencies {
 
 ## 3.3. - Activtiy 1: authentication_page
 ### This is the launcher activity of the application. Users will always have to login when application first loads up. Appropriate comments have been made in the program for a deeper understanding of the activity, however, the important functions and class of the activity will be:
-```java
+```
 1. byte[] getHash(String toHash): Getting hash of credentials to compare with ones stored in DB
 2. String lockout(): Locks user out of inputting if max attempts reached
 3. class CheckLogin: Retrieves already-hashed user credentials from Azure DB to validate hashed user-inputted credentials
 ```
 
 ## 3.4. - Activity 2: email_otp
-### This is the activity where our application first generates an OTP, then sends it to AWS SES, who will then send the OTP to the user email inputted at 'authentication_page' activity. The important functions and class
+### This is the activity where our application generates an OTP, then sends it to AWS SES, who will then send the OTP to the user email inputted at 'authentication_page' activity. The important functions and class of the activity will be:
+```
+1. String generateOTP(): Used to randomly generate (using the Random() java class) an 8 character long OTP; characters can be any character from the entirety of a conventional keybaord
+2. void maxAttempts(): To kick users back to login ativity if max number of OTP input tries are reached
+3. class AmazonSESSample: This Java class is imported to the project's Java files to enable sneding of OTP to AWS SES
+```
+
+## 3.5. - Activity 3: main
+### This activity provides users the button UI to unlock their door. Upon the pressing of the button, the activity publishes an 'unlock' MQTT message to the ThingSpeak MQTT broker, that the lock (ESP8266) is subscribed to too. The important funtions of the activity will be:
+```
+1. void mqttclient(String door_action): Used to publish MQTT message securly to ThingSpeak MQTT broker throught the use of ThingSpeak's certificate
+```
 
 (Show image of program flow followed by the trust boundary)
