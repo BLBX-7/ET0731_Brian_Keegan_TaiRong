@@ -113,7 +113,7 @@ Azure SQL database has a event logging service which allows administrators to se
 
 	- Secure connectivity with MQTT
 
-We are sending our MQTT messages over port 8883 also known as TLS port.
+We are sending our MQTT messages over port 1883 also known as TLS port. (Employing TLS when using MQTT)
 
 
 
