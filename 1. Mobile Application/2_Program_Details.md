@@ -103,5 +103,3 @@ dependencies {
 ```
 1. void mqttclient(String door_action): Used to publish MQTT message securly to ThingSpeak MQTT broker throught the use of ThingSpeak's certificate
 ```
-
-(Show image of program flow followed by the trust boundary)
