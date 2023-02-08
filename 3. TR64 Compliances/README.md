@@ -50,45 +50,50 @@ For user and root accounts, it uses AWS' default Password Policy.
 
 - TR 64: RS-03 **[done]**
 
-   - AWS Shield employed
+   - AWS Shield employed 
    
-AWS Shield Standard defends against most common, frequently occurring network and transport layer DDoS attacks.
+AWS Shield Standard is automatically available for AWS' management console. It defends against most common, frequently occurring network and transport layer DDoS attacks.
 
 - TR 64: AU-01 **[done]**
 
    - significant events recorded
    
  We have made use AWS' CloudTrail service to record activities being performed in our console.
+ 
+ 	- This displays events such as: 
+		- User login, logout and unsuccessful authentication attempts
+		- Changes in access privilages
+		- creation, modification & deletion of data
+	and many more...
+
+		
     
-## Attack Surface  3: Azure  SQL Database
+## Attack Surface 3: Azure  SQL Database
 ### Checklist:
 - TR 64: CS-03 **[done]**
 
-  - AES encryption uaing Transport Data encryption
+  - AES encryption using Transport Data encryption
 
-Azure SQL database makes use of Transport Data Encyrption(TDE) which adds a layer of security to help protect data at rest from unauthorized or offline access to raw files or backups.
-It encrypts the entire database using an AES encryption algorithm.
+Azure SQL database makes use of Transport Data Encyrption(TDE) which adds a layer of security to help protect data at rest from unauthorized or offline access to raw files or backups, encrypting the entire database using an AES encryption algorithm.
    
 - TR 64: IA-01 **[done]**
 
-  - User credential hashed
+  - User credential are hashed in the database
 
-The users password and email has been hashed in the database and the communication between the user and database is encrypted
+Using SHA256, we hashed the user's email and password and saved it to the database. As for the server's credentials, the Azure SQL database will provide a hashed version of the administrator's email and password for use in our Android application program (such that we don't login with plain text in our application program). 
     
 - TR 64: NP-03 **[done]**
 
   - Transport layer security employed
    
-Azure SQL database will enforce encryption (SSL/TLS) at all times for all connections.
-This ensures all data is encrypted "in transit" between the client and server irrespective of the setting of Encrypt or TrustServerCertificate in the connection string
+Azure SQL database will enforce encryption (SSL/TLS) at all times for all connections. This ensures all data is encrypted "in transit" between the user and server irrespective of the setting of Encrypt or TrustServerCertificate in the connection string
 
-- TR 64: NP-05/NP-04 **[done]**
+- TR 64: NP-04 **[done]**
 
-  - Segeregation of communication channels employed
+  - Secure connectivity using whitelisting
    
-We have made use of Azure SQL database's firewall rules to allow specified addresses into the server
+We have made use of Azure SQL database's firewall rules to only allow IP addresses, set in the SQL server, to access the database (essentially a whitelist)
     
-
 - TR 64: RS-04 **[done]**
  
   - Back-up system deployed
