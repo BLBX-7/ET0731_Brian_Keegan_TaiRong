@@ -96,7 +96,7 @@ Azure SQL database makes use of Transport Data Encyrption(TDE) which adds a laye
 
   - User credential are hashed in the database
 
-Using SHA256, we hashed the user's email and password and saved it to the database. As for the server's credentials, the Azure SQL database will provide a hashed version of the administrator's email and password for use in our Android application program (such that we don't login with plain text in our application program). 
+Using SHA256, we hashed the user's email and password and saved it to the SQL Database
     
 - TR 64: NP-03 **[done]**
 
