@@ -28,16 +28,8 @@ Upon unlocking via application, the door works as follows...
 - Side View:
 ![- Side View](/Img/HardwareConnections_2.jpeg)
 
-## ESP32-Camera Circuit Diagram
-![ESP32-Camera Ciruit Diagram](/Img/ESP32Cam.jpeg)
-</br>
-
-## Servo Motor Circuit Diagram
-
-</br>
-
-## Ultra-sonic Sensor Circuit Diagram
-</br>
+## Circuit Diagram
+![Entire circuit diagram](/Img/circuitDiagram.jpeg)
 
 # Next Up
 <a href = "/3. TR64 Compliances/4_TR64_compliance_checklist.md">4: Our TR64 Compliance Checklist</a>
