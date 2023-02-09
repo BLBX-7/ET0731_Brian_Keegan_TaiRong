@@ -1,12 +1,12 @@
 // Ensure correct credentials to connect to your WiFi Network.
 // Ensure correct credentials to connect to your WiFi Network.
-char ssid[] = "Keegan";
-char pass[] = "qwerty1234";
+char ssid[] = "WiFi SSID";
+char pass[] = "WiFi PW";
 // Ensure that the credentials here allow you to publish and subscribe to the ThingSpeak channel.
-#define channelID 2021671
-const char mqttUserName[] = "GSYbAz0VHygoBgkeKhEsOB4"; // Use any name
-const char mqttPass[] = "edX0sbXPZNj4xyn01lQejyQe"; // Change to MQTT API Key from Account > MyProfile
-const char clientID[] = "GSYbAz0VHygoBgkeKhEsOB4";
+#define channelID 000000
+const char mqttUserName[] = "MQTT Username"; // ThingSpeak MQTT username
+const char mqttPass[] = "MQTT Password"; // Change to MQTT API Key from Account > MyProfile
+const char clientID[] = "MQTT Client ID"; // ThingSpeak MQTT client ID. Client ID must = mqttUserName for ThingSpeak.
 
 // It is strongly recommended to use secure connections. However, certain hardware does not work with the WiFiClientSecure library.
 
