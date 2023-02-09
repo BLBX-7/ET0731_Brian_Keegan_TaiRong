@@ -1,7 +1,6 @@
 
 # TR 64 Compliance Checklist
-
-A Checklist is important in assessing how secure the IoT based project is. Below is a compliance checklist we adhered to.
+TR64 is used as a guideline to safegaurd CIA for our IoT system. It provides holistic approches in indentifying and mitigating threats and vulnerabilities.
 
 Attack Surface|TR64 Reference|Description
 --------------|--------------|-----------
