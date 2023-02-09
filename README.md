@@ -17,6 +17,6 @@ We are a group of 3 students, from Singapore Polytechnic, striving to create a s
 ### TR64 compliance: 
 <a href = "/3. TR64 Compliances/4_TR64_compliance_checklist.md">4. TR64 compliance checklist</a></br>
 ### Vulnerability Assessment:
-<a href = "/4. Zone Assessment/5_Trust_boundaries.md">5. Trust boundaries</a></br>
+<a href = "/4. Vulnerability Assessment/5_Vulnerability_assessment.md">5. Vulnerability Assessment</a></br>
 ### Security Testing:
 <a href = "/5. Security Testing/6_Security_testing.md">6. Security testing using Kali Linux</a></br>
