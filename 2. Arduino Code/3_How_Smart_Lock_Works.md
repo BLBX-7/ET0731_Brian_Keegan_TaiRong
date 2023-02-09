@@ -30,3 +30,6 @@ Upon unlocking via application, the door works as follows...
 ### ESP32-Camera Circuit Diagram
 ![ESP32-Camera Ciruit Diagram](/Img/ESP32Cam.jpeg)
 </br>
+
+# Next Up
+<a href = "/3. TR64 Compliances/4_TR64_compliance_checklist.md">4: Our TR64 Compliance Checklist</a>
