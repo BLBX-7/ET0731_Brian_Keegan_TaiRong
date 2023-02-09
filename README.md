@@ -16,9 +16,7 @@ We are a group of 3 students, from Singapore Polytechnic, striving to create a s
 <a href = "/2. Arduino Code/3_How_smart_lock_works.md">3. How smart lock works</a></br>
 ### TR64 compliance: 
 <a href = "/3. TR64 Compliances/4_TR64_compliance_checklist.md">4. TR64 compliance checklist</a></br>
-### Zone Assessment:
+### Vulnerability Assessment:
 <a href = "/4. Zone Assessment/5_Trust_boundaries.md">5. Trust boundaries</a></br>
 ### Security Testing:
 <a href = "/5. Security Testing/6_Security_testing.md">6. Security testing using Kali Linux</a></br>
-### Threat, Vulnerability, Risk Assessments:
-<a href = "/6. Threat, Vulnerability, Risk Assessment/7_T_V_R_assessment.md">7. Threat, Vulnerability and Risk assessment</a>
