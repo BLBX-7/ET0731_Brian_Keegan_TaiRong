@@ -155,5 +155,6 @@ We are sending our MQTT messages over port 8883 also known as TLS port. (Employi
     - Penetration-testing or vulnerability assessment conducted **[done]**
 
 Through the use of Kali linux and other theoratical attacks, we were able to assess the vulnerability of our system.
-    
-  
+
+#Next Up
+<a href="5_Vulnerability_assessment.md">5. Vulnerability assessment </a>
