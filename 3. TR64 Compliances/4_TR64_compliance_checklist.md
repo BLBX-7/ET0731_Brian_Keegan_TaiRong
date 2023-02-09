@@ -1,6 +1,6 @@
 
 # TR 64 Compliance Checklist
-TR64 is used as a guideline to safegaurd CIA for our IoT system. It provides holistic approches in indentifying and mitigating threats and vulnerabilities.
+TR64 is used as a guideline to safegaurd CIA for our IoT system. It provides holistic approches in identifying and mitigating threats and vulnerabilities.
 
 Attack Surface|TR64 Reference|Description
 --------------|--------------|-----------
