@@ -21,4 +21,4 @@ We are a group of 3 students, from Singapore Polytechnic, striving to create a s
 ### Security Testing:
 <a href = "/5. Security Testing/6_Security_testing.md">6. Security testing using Kali Linux</a></br>
 ### Threat, Vulnerability, Risk Assessments:
-<a href = "/6. Threat, Vulnerability, Risk Assessment/7_T_V_R_assessment.md">6. Security testing using Kali Linux</a>
+<a href = "/6. Threat, Vulnerability, Risk Assessment/7_T_V_R_assessment.md">7. Threat, Vulnerability and Risk assessment</a>
