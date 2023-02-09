@@ -132,8 +132,9 @@ Azure SQL database has a event logging service which allows administrators to se
 We are sending our MQTT messages over port 8883 also known as TLS port. (Employing TLS when using MQTT)
 
 
-## Attack Surface 5: ESP32
+## Attack Surface 5: Hardware
 
+- TR 64 : 
 
     
 ## Attack Surface 6; System as a whole (REALLY NOT SURE)
@@ -141,13 +142,14 @@ We are sending our MQTT messages over port 8883 also known as TLS port. (Employi
 - TR 64 : LP-01  **[done]**
 
     - Conducted threat modeling to identify threats
-    The team used the STRIDE tool to identify threats on the network architecture, which then led to this compliance checklist. 
+  
+ The team used the STRIDE tool to identify threats on the network architecture, which then led to this compliance checklist. 
     
 - TR 64 : LP-02 
 
     - System designed in a secure way **[done]**
     
-    All HTTP and MQTT versions of the web app has been changed to HTTPS and MQTTS, some prototyping ideas such as ESP32 web server has also been abolished in order to decerase attack surface
+ All HTTP and MQTT versions of the web app has been changed to HTTPS and MQTTS, some prototyping ideas such as ESP32 web server has also been abolished in order to decerase attack surface
     
 - TR 64 : LP-07 
 
