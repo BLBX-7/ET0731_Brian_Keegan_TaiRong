@@ -32,6 +32,9 @@ If OTP is entered wrongly thrice, user will be forced to re-login from login act
 With that knowledge in mind, this is the detailed application flow diagram:
 ![Application flow diagram](Img/App_flow.JPG)
 
+Here is the UI flow of our app:
+![Application UI flow diagram](Img/App_UI_flow.JPG)
+
 # 3 - Application documentation
 ## 3.1. - Accounts needed
 ### The accounts created to support this project will be:
