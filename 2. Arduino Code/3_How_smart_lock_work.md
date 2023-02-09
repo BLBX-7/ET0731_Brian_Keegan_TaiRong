@@ -22,13 +22,21 @@ Upon unlocking via application, the door works as follows...
 9. Wait for MQTT message "unlocked" again.
 
 # Hardware Integration </br>
+
 - Front View:
 ![- Front View](/Img/HardwareConnections.jpeg) </br>
 - Side View:
 ![- Side View](/Img/HardwareConnections_2.jpeg)
 
-### ESP32-Camera Circuit Diagram
+## ESP32-Camera Circuit Diagram
 ![ESP32-Camera Ciruit Diagram](/Img/ESP32Cam.jpeg)
+</br>
+
+## Servo Motor Circuit Diagram
+
+</br>
+
+## Ultra-sonic Sensor Circuit Diagram
 </br>
 
 # Next Up
