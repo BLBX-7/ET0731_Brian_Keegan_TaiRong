@@ -32,8 +32,14 @@ kali@kali:~$ aircrack-ng -a2 -b <MAC Address of WAP> -w <Output file path> <File
 Note that file of common passwords can be retrieved from crunch tools on https://www.kali.org/tools/crunch/. </br>
 We then waited until the WiFi password is matched, hence, we are now able to access the network.
 
+## Finding Target Device
+After accessing the network, we will need to find the IP address fo the target device in order to perform attacks on it. To do this we will be using a network scanning tool on Kali Link called "nmap". We will run the follwing command to scan the network we are in.
+```console
+kali@kali:~$ sudo nmap -sn <Network_Address>
+```
+This will provide us with the IP address, MAC address and manufacturer name of the devices connected in the network. With that we can discover the Arduino manufactured device on the network which is our target since it will control the lock and camera of the smart door. Thus, we can perform our attack with this information.
 
-## Attacked target device
+## Attack Performed on Target Device
 Conducted a denial-of-service (DOS) attack by using the "hping3" tool which allows us to send manipulated packets including size, quantity, and fragmentation of packets in order to overload the target.
 </br>
 </br>
