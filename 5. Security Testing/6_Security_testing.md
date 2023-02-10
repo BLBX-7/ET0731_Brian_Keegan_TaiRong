@@ -29,7 +29,7 @@ Once all clients are disconnected from the target network, we will wait for clie
 ```console
 kali@kali:~$ aircrack-ng -a2 -b <MAC Address of WAP> -w <Output file path> <File of Common Passwords>
 ```
-Note that file of common passwords can be retrieve from crunch tools on Kali website https://www.kali.org/tools/crunch/. </br>
+Note that file of common passwords can be retrieved from crunch tools on https://www.kali.org/tools/crunch/. </br>
 We then waited until the WiFi password is matched, hence, we are now able to access the network.
 
 
