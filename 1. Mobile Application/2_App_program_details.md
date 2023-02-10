@@ -41,7 +41,7 @@ Here is the UI flow of our app:
 1. An AWS SES account       [Free for students] </br>
 2. Azure Server + Database  [Free for students] </br>
 3. ThingSpeak MQTT Broker with credentials for publisher created </br>
-The credentials of a ThingSpeak MQTT publisher should not be the same of that a ThingSpeak MQTT subscriber.
+The credentials of a ThingSpeak MQTT publisher should not be the same of that a ThingSpeak MQTT subscriber. [Free for all]
 
 ## 3.2. - Project prerequisites
 ### Files needed for project:
