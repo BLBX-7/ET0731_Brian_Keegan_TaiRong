@@ -147,7 +147,7 @@ We are sending our MQTT messages over port 8883 also known as TLS port. (Employi
 
 - TR 64 : 
     
-## Attack Surface 6; System as a whole (REALLY NOT SURE)
+## Attack Surface 6: System as a whole (REALLY NOT SURE)
 ### Checklist:
 - TR 64 : LP-01  **[done]**
 
