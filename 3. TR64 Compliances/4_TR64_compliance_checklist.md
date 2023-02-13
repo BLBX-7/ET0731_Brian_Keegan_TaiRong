@@ -8,7 +8,7 @@ Phone app|CS-01, IA-01, AP-01, AP-02|Employment of random number generator, Secu
 Amazon Web Service|NP-04, DP-04, AP-02, MT-01, RS-03, UA-01|Secured connectivity is enforced, Access control mechanism, Multi-Factor Authentication, Strong password policies, able to withstand malicious attacks & significant events recorded
 Azure SQL Database|CS-03, IA-01, NP-03, NP-04, RS-04, AU-01|AES encryption, Client credential's stored securely, transport layer security employed, Whitelisting, regular backup of system data, significant events recorded
 Thingspeak Cloud|MT-01, NP-04|Strong password policies, Secure connectivity based on industry best practices
-ESP32||
+ESP32|LP-02|System designed and developed using secure systems
 Entire System|LP-01, LP-02, LP-07|Conducted threat modeling to identify threats, System is designed and developed using secure systems engineering approach and best practices, Penetration-testing and vulnerability assessment
 
 
@@ -145,15 +145,19 @@ We are sending our MQTT messages over port 8883 also known as TLS port. (Employi
 
 ## Attack Surface 5: Hardware
 
-- TR 64 : 
+- TR 64 : LP-02 **[Done through Concept]*
+
+	-  Provide a Temper resistant case for Hardware 
+
+ By using Security Torx screws, we will secure our hardware by applying the screws into the box system. The screwdriver needed to unbox the system is very speciific. Thus, providing better security against physical tampering of the hardware.
     
-## Attack Surface 6: System as a whole (REALLY NOT SURE)
+## Attack Surface 6: System as a whole
 ### Checklist:
 - TR 64 : LP-01  **[done]**
 
-    - Conducted threat modeling to identify threats
+    - Conducted threat modeling to analyse threats
   
- The team used the STRIDE tool to identify threats on the network architecture, which then led to this compliance checklist. 
+ The team used the DREAD tool to Rate threats on the network architecture, which then led to this compliance checklist. 
     
 - TR 64 : LP-02 
 
