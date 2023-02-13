@@ -5,7 +5,7 @@ We are a group of 3 students, from Singapore Polytechnic, striving to create a s
 </br>This is our "Internet Of Things Security (IOTS)" mini project. 
 
 # Proposal 
-<a href = "GrpG_ver2.pdf">Group G Proposal </a>
+<a href = "/0.%20Proposal/GrpG_ver2.pdf">Group G Proposal </a>
 
 # Report 
 ## The recommended flow of reading the report will be:
