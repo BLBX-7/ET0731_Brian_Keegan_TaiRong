@@ -51,4 +51,4 @@ Note: Port used is 8883 (MQTT TLS port). </br>
 We were successful in disrupting the MQTT services which disallowed the users from unlocking their door. To stop the DOS attack, press Ctrl+C on keyboard.</br>
 
 ## Video of Penetration Testing
-[![Video of Penetration Testing](Img/thumbnail.jpeg)](https://youtu.be/H-ZGN0VNeEk)
+[![Video of Penetration Testing](https://img.youtube.com/vi/gxYScx5LQO0/maxresdefault.jpg)](https://youtu.be/gxYScx5LQO0)
