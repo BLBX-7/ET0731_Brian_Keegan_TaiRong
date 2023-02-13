@@ -49,3 +49,6 @@ kali@kali:~$ sudo hping3 "IP ADDRESS of Target" -q -n -d 120 -S -p 8883 --flood 
 Note: Port used is 8883 (MQTT TLS port). </br>
 
 We were successful in disrupting the MQTT services which disallowed the users from unlocking their door. To stop the DOS attack, press Ctrl+C on keyboard.</br>
+
+## Video of Penetration Testing
+![Video of Penetration Testing](/Img/PenetrationTesting.mp4)
