@@ -1,6 +1,12 @@
 # Singapore Polytechnic: ET0731
 ### By: Soh Tai Rong, Brian Lim Beng Xian, Keegan Lim Beng Yang. 
 
+### LinkedIn ###
+<a href="https://www.linkedin.com/in/soh-tai-rong/"> Soh Tai Rong </a> </br>
+<a href="https://www.linkedin.com/in/brian-lim-890801255/"> Brian Lim Beng Xian </a> </br>
+<a href="https://www.linkedin.com/in/keegan-lim-1a64561b4/"> Keegan Lim Beng Yang </a>
+
+### Description ###
 We are a group of 3 students, from Singapore Polytechnic, striving to create a smart lock that brings about convenience, while at the same time, uphold the highest levels of both cyber and physical securities.  
 </br>This is our "Internet Of Things Security (IOTS)" mini project. 
 
