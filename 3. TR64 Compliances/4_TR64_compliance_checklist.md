@@ -4,11 +4,11 @@ TR64 is used as a guideline to safegaurd CIA for our IoT system. It provides hol
 
 Attack Surface|TR64 Reference|Description
 --------------|--------------|-----------
-Phone app|CS-01, IA-01, AP-01, AP-02|Employment of random number generator, Secure storage of user credentials, protection against repeated attempts & Multi factor Authentication 
+Phone app|CS-01, IA-01, AP-01, AP-02|Employment of random number generator, Secure storage of user credentials, Input validation to guard against vulnerabilities, protection against repeated attempts & Multi factor Authentication 
 Amazon Web Service|NP-04, DP-04, AP-02, MT-01, RS-03, UA-01|Secured connectivity is enforced, Access control mechanism, Multi-Factor Authentication, Strong password policies, able to withstand malicious attacks & significant events recorded
 Azure SQL Database|CS-03, IA-01, NP-03, NP-04, RS-04, AU-01|AES encryption, Client credential's stored securely, transport layer security employed, Whitelisting, regular backup of system data, significant events recorded
 Thingspeak Cloud|MT-01, NP-04|Strong password policies, Secure connectivity based on industry best practices
-ESP32|LP-02|System designed and developed using secure systems
+Hardware|AP-04|Tamper resistant hardware
 Entire System|LP-01, LP-02, LP-07|Conducted threat modeling to identify threats, System is designed and developed using secure systems engineering approach and best practices, Penetration-testing and vulnerability assessment
 
 
@@ -24,8 +24,9 @@ The Phone application will generate an OTP and send it to Amazon Web Services' s
 
 	- User's Password and Email is hashed in database
  
-User will input their username and password at the login page, and as the SQL database has the hashed variant of the user's credentials, it (the Phone app) will convert the user inputted email and password (in plain text form) to its hashed form before comparing it with the hashed credentials stored in the database. 
-     
+User will input their username and password at the login page, and as the SQL database has the hashed variant of the user's credentials, it (the Phone app) will convert the user inputted email and password (in plain text form) to its hashed form before comparing it with the hashed credentials stored in the database.
+
+
 - TR 64 : AP-01 **[done]**
 
 	- Lock-out mechanism employed to protect against repeated unauthorised attempts
@@ -145,11 +146,11 @@ We are sending our MQTT messages over port 8883 also known as TLS port. (Employi
 
 ## Attack Surface 5: Hardware
 
-- TR 64 : LP-02 **[Done through Concept]*
+- TR 64 : AP-04 **[Done through Concept]*
 
 	-  Provide a Temper resistant case for Hardware 
 
- By using Security Torx screws, we will secure our hardware by applying the screws into the box system. The screwdriver needed to unbox the system is very speciific. Thus, providing better security against physical tampering of the hardware.
+ By using Security Torx screws, we will secure our hardware by applying the screws into the box system. The screwdriver needed to unbox the system is very speciific. Thus, providing better security against physical tampering of the hardware. The tamper resistant case will also prevent our SD card in the ESP32-CAM to be stolen or destroyed.
     
 ## Attack Surface 6: System as a whole
 ### Checklist:
