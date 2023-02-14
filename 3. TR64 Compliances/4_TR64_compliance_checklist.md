@@ -7,7 +7,7 @@ Attack Surface|TR64 Reference|Description
 Phone app|CS-01, IA-01, AP-01, AP-02|Employment of random number generator, Secure storage of user credentials, Input validation to guard against vulnerabilities, protection against repeated attempts & Multi factor Authentication 
 Amazon Web Service|NP-04, DP-04, AP-02, MT-01, RS-03, UA-01|Secured connectivity is enforced, Access control mechanism, Multi-Factor Authentication, Strong password policies, able to withstand malicious attacks & significant events recorded
 Azure SQL Database|CS-03, IA-01, NP-03, NP-04, RS-04, AU-01|AES encryption, Client credential's stored securely, transport layer security employed, Whitelisting, regular backup of system data, significant events recorded
-Thingspeak Cloud|MT-01, NP-04|Strong password policies, Secure connectivity based on industry best practices
+Thingspeak MQTT Broker|MT-01, NP-04|Strong password policies, Secure connectivity based on industry best practices
 Hardware|AP-04|Tamper resistant hardware
 Entire System|LP-01, LP-02, LP-07|Conducted threat modeling to identify threats, System is designed and developed using secure systems engineering approach and best practices, Penetration-testing and vulnerability assessment
 
@@ -143,7 +143,6 @@ In order to publish or subscribe to an MQTT broker, the client has to provide ge
 
 We are sending our MQTT messages over port 8883 also known as TLS port. (Employing TLS when using MQTT)
 
-
 ## Attack Surface 5: Hardware
 
 - TR 64 : AP-04 **[Done through Concept]*
@@ -164,7 +163,7 @@ We are sending our MQTT messages over port 8883 also known as TLS port. (Employi
 
     - System designed in a secure way **[done]**
     
- All HTTP and MQTT versions of the web app has been changed to HTTPS and MQTTS, some prototyping ideas such as ESP32 web server has also been abolished in order to decerase attack surface
+ We made use of MQTT with TLS for our communication protocol to ensure security for data in transit and rest.  
     
 - TR 64 : LP-07 
 
