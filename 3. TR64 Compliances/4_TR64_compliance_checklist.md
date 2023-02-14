@@ -4,9 +4,9 @@ TR64 is used as a guideline to safegaurd CIA for our IoT system. It provides hol
 
 Attack Surface|TR64 Reference|Description
 --------------|--------------|-----------
-Phone app|CS-01, IA-01, AP-01, AP-02|Employment of random number generator, Secure storage of user credentials, Input validation to guard against vulnerabilities, protection against repeated attempts & Multi factor Authentication 
+Phone app|MT-01, CS-01, IA-01, AP-01, AP-02|Strong password policies, Employment of random number generator, Secure storage of user credentials, Input validation to guard against vulnerabilities, protection against repeated attempts & Multi factor Authentication 
 Amazon Web Service|NP-04, DP-04, AP-02, MT-01, RS-03, UA-01|Secured connectivity is enforced, Access control mechanism, Multi-Factor Authentication, Strong password policies, able to withstand malicious attacks & significant events recorded
-Azure SQL Database|CS-03, IA-01, NP-03, NP-04, RS-04, AU-01|AES encryption, Client credential's stored securely, transport layer security employed, Whitelisting, regular backup of system data, significant events recorded
+Azure SQL Database|MT-01, CS-03, IA-01, NP-03, NP-04, RS-04, AU-01|Strong password policies, AES encryption, Client credential's stored securely, transport layer security employed, Whitelisting, regular backup of system data, significant events recorded
 Thingspeak MQTT Broker|MT-01, NP-04|Strong password policies, Secure connectivity based on industry best practices
 Hardware|AP-04|Tamper resistant hardware
 Entire System|LP-01, LP-02, LP-07|Conducted threat modeling to identify threats, System is designed and developed using secure systems engineering approach and best practices, Penetration-testing and vulnerability assessment
@@ -14,6 +14,12 @@ Entire System|LP-01, LP-02, LP-07|Conducted threat modeling to identify threats,
 
 ## Attack Surface 1: Phone App
 ### Checklist:
+- TR 64: MT-01 **[done]**
+	
+	- Stong Password policy is enforced for user login
+
+User enforces default strong Password Policy. 
+
 - TR 64 : CS-01 **[done]**
 
 	- Random number generator employed 
@@ -46,13 +52,13 @@ Attacker will attempt a brute-force attack to login into the app. With the lock-
 
     - Secured connectivity is enforced
     
-Android Appliaction communicates with Amazon SES SMTP endpoint on 587 (the communication port used by AWS SES for STARTTLS communication).
+Android Appliaction communicates with Amazon SES SMTP endpoint on port 587 (the communication port used by AWS SES for STARTTLS communication).
 
 - TR 64 : DP-04 **[done]**
 
     - Access control mechanisms employed 
 
-We have made use AWS' Identity and Access Management(IAM) to create user groups with different policies. The first group is an administrator group which has full access to AWS' service, the second group is an ReadOnly group. This policy grants permissions to only view resources and basic metadata across all AWS services.
+We have made use AWS' Identity and Access Management (IAM) to create user groups with different policies. The first group is an administrator group which has full access to AWS' service, the second group is an ReadOnly group. This policy grants permissions to only view resources and basic metadata across all AWS services.
 
 - TR 64: AP-02 **[done]**
 
@@ -92,6 +98,12 @@ AWS Shield Standard is automatically available for AWS' management console. It d
     
 ## Attack Surface 3: Azure SQL Database
 ### Checklist:
+- TR 64: MT-01 **[done]**
+	
+	- Stong Password policy is enforced for user login
+
+For user accounts, it enforces default strong Password Policy. 
+
 - TR 64: CS-03 **[done]**
 
   - AES encryption using Transport Data encryption
@@ -102,13 +114,13 @@ Azure SQL database makes use of Transport Data Encyrption (TDE) which adds a lay
 
   - User credential are hashed in the database
 
-Using SHA256, we hashed the user's email and password and saved it to the SQL Database
+Using SHA256, we hashed the user's email and password and saved it to the SQL Database.
     
 - TR 64: NP-03 **[done]**
 
   - Transport layer security employed
    
-Azure SQL database will enforce encryption (SSL/TLS) at all times for all connections. This ensures all data is encrypted and secured "in transit" between the user and server because of the connection string used: Encrypt=True and TrustServerCertificate=False. 
+Azure SQL database will enforce encryption (SSL/TLS) at all times for all connections. This ensures all data is encrypted and secured "in-transit" between the user and server because of the connection string used: Encrypt=True and TrustServerCertificate=False. 
 
 - TR 64: NP-04 **[done]**
 
@@ -130,12 +142,11 @@ Azure SQL database has a event logging service which allows administrators to se
 	     
 
 ## Attack Surface 4: ThingSpeak MQTT Broker
-
 - TR 64 : MT-01 **[done]**
 
 	- Strong password policies
 
-In order to publish or subscribe to an MQTT broker, the client has to provide generated strong username and password for authentication and authorization.
+In order for a client to publish or subscribe to an MQTT broker, the client has to provide generated strong username and password for authentication and authorization.
 
 - TR 64 : NP-04 **[done]**
 
@@ -163,13 +174,13 @@ We are sending our MQTT messages over port 8883 also known as TLS port. (Employi
 
     - System designed in a secure way **[done]**
     
- We made use of MQTT with TLS for our communication protocol to ensure security for data in transit and rest.  
+ We made use of MQTT with TLS for our communication protocol to ensure security for data in transit. Communication with cloud services also done in a secure way, and data stored in cloud are auto encrypted with security.
     
 - TR 64 : LP-07 
 
     - Penetration-testing or vulnerability assessment conducted **[done]**
 
-Through the use of Kali linux and other theoratical attacks, we were able to assess the vulnerability of our system.
+Through the use of Kali linux and other theoratical attacks, we were able to perform penetration-testing and assess the vulnerability of our system.
 
 # Next Up
 <a href="/4. Vulnerability Assessment/5_Vulnerability_assessment.md">5. Vulnerability Assessment </a>
