@@ -54,5 +54,5 @@ We were successful in disrupting the MQTT services which disallowed the users fr
 [![Video of Penetration Testing](https://img.youtube.com/vi/gxYScx5LQO0/maxresdefault.jpg)](https://youtu.be/gxYScx5LQO0)
 
 
-## End
-https://github.com/BLBX-7/ET0731_Brian_Keegan_TaiRong
+## END:
+<a href="/ET0731_Brian_Keegan_TaiRong">Return To Home Page</a>
