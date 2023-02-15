@@ -109,21 +109,23 @@ AWS Shield Standard is automatically available for AWS' management console. It d
 
 For user accounts, it enforces default strong Password Policy.
 
-![Physical system architecture](Img/) 
+![Azure_MT-01](/Img/azure_mt01.JPG)
 
 - TR 64: CS-03 **[done]**
 
   - AES encryption using Transport Data encryption
 
 Azure SQL database makes use of Transport Data Encyrption (TDE) which adds a layer of security to help protect data at rest from unauthorized or offline access to raw files or backups, encrypting the entire database using an AES encryption algorithm.
-   
+
+![Azure_CS-03](/Img/azure_cs03.JPG)
+
 - TR 64: IA-01 **[done]**
 
   - User credential are hashed in the database
 
 Using SHA256, we hashed the user's email and password and saved it to the SQL Database.
 
-![Physical system architecture](Img/) 
+![Azure_IA-01](/Img/azure_ia01.JPG)
     
 - TR 64: NP-03 **[done]**
 
@@ -131,27 +133,32 @@ Using SHA256, we hashed the user's email and password and saved it to the SQL Da
    
 Azure SQL database will enforce encryption (SSL/TLS) at all times for all connections. This ensures all data is encrypted and secured "in-transit" between the user and server because of the connection string used: Encrypt=True and TrustServerCertificate=False. 
 
+![Azure_np-03](/Img/azure_np03.JPG)
+
+
 - TR 64: NP-04 **[done]**
 
   - Secure connectivity using whitelisting
    
 We have made use of Azure SQL database's firewall rules to only allow IP addresses, set in the SQL server, to access the database (essentially a whitelist).
 
-![Physical system architecture](Img/) 
+![Azure_MT-01](/Img/azure_np04.JPG)
     
 - TR 64: RS-04 **[done]**
  
   - Back-up system deployed
 
 Azure SQL database, by default, automatically backs up the databases with no user action needed
-![Physical system architecture](Img/) 
+
+![Azure_rs-04](/Img/azure_rs04.JPG)
 
 - TR 64: AU-01 **[done]**
 
   - Significant events recorded
 
 Azure SQL database has a event logging service which allows administrators to see the history of activities taking place within the server
-![Physical system architecture](Img/) 	     
+
+![Azure_MT-01](/Img/azure_au01.JPG)
 
 ## Attack Surface 4: ThingSpeak MQTT Broker
 - TR 64 : MT-01 **[done]**
