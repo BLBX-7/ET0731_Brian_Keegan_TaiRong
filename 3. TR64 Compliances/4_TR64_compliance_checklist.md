@@ -19,7 +19,7 @@ Entire System|LP-01, LP-02, LP-07|Conducted threat modeling to identify threats,
 	- Stong Password policy is enforced for user login
 
 User enforces default strong Password Policy.
-![Physical system architecture](Img/) 
+![APP_MT-01](Img/) 
 
 - TR 64 : CS-01 **[done]**
 
@@ -27,7 +27,7 @@ User enforces default strong Password Policy.
     
 The Phone application will generate an OTP and send it to Amazon Web Services' simple email service (SES), the generated OTP will then be sent to the user's email, user keys in the OTP and is able to enter the application. Confirming it is him/her.
 
-![Physical system architecture](Img/) 
+![APP_CS-01](Img/) 
 
 - TR 64 : IA-01 **[done]**
 
