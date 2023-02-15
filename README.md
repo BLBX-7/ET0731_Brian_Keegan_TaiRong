@@ -29,3 +29,6 @@ We are a group of 3 students, from Singapore Polytechnic, striving to create a s
 
 ### Demo Video
 [![Demo Video](https://img.youtube.com/vi/-5kkD8JmHGk/maxresdefault.jpg)](https://youtu.be/-5kkD8JmHGk)
+
+## Presentation Slides
+<a href = "7. Presentation Slides/Group3_Slides.pdf"> 7. Presentation Slides</a>
