@@ -28,8 +28,13 @@ Upon unlocking via application, the door works as follows...
 - Side View:
 ![- Side View](/Img/HardwareConnections_2.jpeg)
 
-## Circuit Diagram
+## Circuit Diagram:
 ![Entire circuit diagram](/Img/circuitDiagram.jpeg)
+
+# Physical Setup:
+![Entire circuit diagram 1](/Img/product2.jpeg)
+![Entire circuit diagram 2](/Img/product1.jpeg)
+![Entire circuit diagram 3](/Img/product3.jpeg)
 
 # Next Up
 <a href = "/3. TR64 Compliances/4_TR64_compliance_checklist.md">4: Our TR64 Compliance Checklist</a>
