@@ -185,8 +185,10 @@ We are sending our MQTT messages over port 8883 also known as TLS port. (Employi
 
  By using Security Torx screws, we will secure our hardware by applying the screws into the box system. The screwdriver needed to unbox the system is very speciific. Thus, providing better security against physical tampering of the hardware. The tamper resistant case will also prevent our SD card in the ESP32-CAM to be stolen or destroyed.
 
- ![Physical system architecture](Img/) 
-    
+![torx_screw](/Img/torx_screw.png)
+
+![metal_box](/Img/metal_box.png)
+
 ## Attack Surface 6: System as a whole
 ### Checklist:
 - TR 64 : LP-01  **[done]**
