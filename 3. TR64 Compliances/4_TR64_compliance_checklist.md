@@ -67,7 +67,7 @@ Android Appliaction communicates with Amazon SES SMTP endpoint on port 587 (the 
 
 We have made use AWS' Identity and Access Management (IAM) to create user groups with different policies. The first group is an administrator group which has full access to AWS' service, the second group is an ReadOnly group. This policy grants permissions to only view resources and basic metadata across all AWS services.
 
-![Physical system architecture](Img/) 
+![AWS_DP-04](/Img/AWS_DP-04.png) 
 
 - TR 64: AP-02 **[done]**
 
@@ -75,7 +75,7 @@ We have made use AWS' Identity and Access Management (IAM) to create user groups
 
 For both user and root access, 2FA is employed through the AWS' google authentication feature. This means that attackers will still have to get the six digit code to login to the console, every 30 seconds our 6 digit code will always change to ensure security.
 
-![Physical system architecture](Img/) 
+![AWS_AP-02](/Img/AWS_AP-02.jpeg) 
       
 - TR 64: MT-01 **[done]**
 	
@@ -83,7 +83,7 @@ For both user and root access, 2FA is employed through the AWS' google authentic
 
 For user and root accounts, it enforces AWS' default Password Policy. 
 
-![Physical system architecture](Img/) 
+![AWS_MT-01](/Img/AWS_MT-01.png)  
 
 - TR 64: RS-03 **[done]**
 
@@ -97,7 +97,7 @@ AWS Shield Standard is automatically available for AWS' management console. It d
    
  We have made use AWS' CloudTrail service to record activities being performed in our console.
  
-![Physical system architecture](Img/) 
+![AWS_AU-01](/Img/AWS_AU-01.png) 
 
 
 ## Attack Surface 3: Azure SQL Database
