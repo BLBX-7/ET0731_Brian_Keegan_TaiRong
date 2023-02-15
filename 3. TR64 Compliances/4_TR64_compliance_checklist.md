@@ -4,7 +4,7 @@ TR64 is used as a guideline to safegaurd CIA for our IoT system. It provides hol
 
 Attack Surface|TR64 Reference|Description
 --------------|--------------|-----------
-Phone app|MT-01, CS-01, IA-01, AP-01, AP-02|Strong password policies, Employment of random number generator, Secure storage of user credentials, Input validation to guard against vulnerabilities, protection against repeated attempts & Multi factor Authentication 
+Phone app|MT-01, CS-01, IA-01, AP-01, AP-02|Strong password policies, Employment of random number generator, Secure storage of user credentials, protection against repeated attempts & Multi factor Authentication 
 Amazon Web Service|NP-04, DP-04, AP-02, MT-01, RS-03, UA-01|Secured connectivity is enforced, Access control mechanism, Multi-Factor Authentication, Strong password policies, able to withstand malicious attacks & significant events recorded
 Azure SQL Database|MT-01, CS-03, IA-01, NP-03, NP-04, RS-04, AU-01|Strong password policies, AES encryption, Client credential's stored securely, transport layer security employed, Whitelisting, regular backup of system data, significant events recorded
 Thingspeak MQTT Broker|MT-01, NP-04|Strong password policies, Secure connectivity based on industry best practices
