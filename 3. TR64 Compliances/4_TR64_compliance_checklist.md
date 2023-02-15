@@ -158,7 +158,7 @@ Azure SQL database, by default, automatically backs up the databases with no use
 
 Azure SQL database has a event logging service which allows administrators to see the history of activities taking place within the server
 
-![Azure_MT-01](/Img/azure_au01.JPG)
+![Azure_AU-01](/Img/azure_au01.JPG)
 
 ## Attack Surface 4: ThingSpeak MQTT Broker
 - TR 64 : MT-01 **[done]**
@@ -166,14 +166,16 @@ Azure SQL database has a event logging service which allows administrators to se
 	- Strong password policies
 
 In order for a client to publish or subscribe to an MQTT broker, the client has to provide generated strong username and password for authentication and authorization.
-![Physical system architecture](Img/) 
+
+![MQTT_MT-01](/Img/MQTT_MT-01.jpeg) 
 
 - TR 64 : NP-04 **[done]**
 
 	- Secure connectivity with MQTT
 
 We are sending our MQTT messages over port 8883 also known as TLS port. (Employing TLS when using MQTT)
-![Physical system architecture](Img/) 
+
+![MQTT_NP-04](/Img/MQTT_NP-04.jpeg) 
 
 ## Attack Surface 5: Hardware
 
@@ -182,7 +184,7 @@ We are sending our MQTT messages over port 8883 also known as TLS port. (Employi
 	-  Provide a Temper resistant case for Hardware 
 
  By using Security Torx screws, we will secure our hardware by applying the screws into the box system. The screwdriver needed to unbox the system is very speciific. Thus, providing better security against physical tampering of the hardware. The tamper resistant case will also prevent our SD card in the ESP32-CAM to be stolen or destroyed.
- 
+
  ![Physical system architecture](Img/) 
     
 ## Attack Surface 6: System as a whole
