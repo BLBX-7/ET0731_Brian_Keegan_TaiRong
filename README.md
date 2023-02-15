@@ -28,4 +28,4 @@ We are a group of 3 students, from Singapore Polytechnic, striving to create a s
 <a href = "/5. Security Testing/6_Security_testing.md">6. Security testing using Kali Linux</a></br>
 
 ### Demo Video
-https://youtu.be/-5kkD8JmHGk
+[![Demo Video](https://img.youtube.com/vi/-5kkD8JmHGk/maxresdefault.jpg)](https://youtu.be/-5kkD8JmHGk)
