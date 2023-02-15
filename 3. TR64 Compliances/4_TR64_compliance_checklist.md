@@ -18,7 +18,8 @@ Entire System|LP-01, LP-02, LP-07|Conducted threat modeling to identify threats,
 	
 	- Stong Password policy is enforced for user login
 
-User enforces default strong Password Policy. 
+User enforces default strong Password Policy.
+![Physical system architecture](Img/) 
 
 - TR 64 : CS-01 **[done]**
 
@@ -26,12 +27,15 @@ User enforces default strong Password Policy.
     
 The Phone application will generate an OTP and send it to Amazon Web Services' simple email service (SES), the generated OTP will then be sent to the user's email, user keys in the OTP and is able to enter the application. Confirming it is him/her.
 
+![Physical system architecture](Img/) 
+
 - TR 64 : IA-01 **[done]**
 
 	- User's Password and Email is hashed in database
  
 User will input their username and password at the login page, and as the SQL database has the hashed variant of the user's credentials, it (the Phone app) will convert the user inputted email and password (in plain text form) to its hashed form before comparing it with the hashed credentials stored in the database.
 
+![Physical system architecture](Img/) 
 
 - TR 64 : AP-01 **[done]**
 
@@ -39,12 +43,15 @@ User will input their username and password at the login page, and as the SQL da
 
 Attacker will attempt a brute-force attack to login into the app. With the lock-out mechanism, after 3 attempts the attacker wll be locked out and is no longer able to attempt anymore passwords. 
 
+![Physical system architecture](Img/) 
+
 - TR 64 : AP-02 **[done]**
 
 	- Multi-factor authentication 
 
 2 Factor Authentication (2FA), first requiring a user to login with his/her register email and complex password. Second is an OTP sent, that has to be cross-verified in application, to their registered email as the form of 2FA.   
 
+![Physical system architecture](Img/) 
 
 ## Attack Surface 2: Amazon Web Service(AWS)
 ### Checklist:
@@ -60,12 +67,15 @@ Android Appliaction communicates with Amazon SES SMTP endpoint on port 587 (the 
 
 We have made use AWS' Identity and Access Management (IAM) to create user groups with different policies. The first group is an administrator group which has full access to AWS' service, the second group is an ReadOnly group. This policy grants permissions to only view resources and basic metadata across all AWS services.
 
+![Physical system architecture](Img/) 
+
 - TR 64: AP-02 **[done]**
 
     - Secured login using Google authenticator 
 
 For both user and root access, 2FA is employed through the AWS' google authentication feature. This means that attackers will still have to get the six digit code to login to the console, every 30 seconds our 6 digit code will always change to ensure security.
 
+![Physical system architecture](Img/) 
       
 - TR 64: MT-01 **[done]**
 	
@@ -73,8 +83,7 @@ For both user and root access, 2FA is employed through the AWS' google authentic
 
 For user and root accounts, it enforces AWS' default Password Policy. 
 
-	- Minimum Password length: 8 
-	- Password strength include a minimum of three of the following mix of character types: Uppercase, Lowercase, Numbers & Non-alphanumeric characters 
+![Physical system architecture](Img/) 
 
 - TR 64: RS-03 **[done]**
 
@@ -88,21 +97,18 @@ AWS Shield Standard is automatically available for AWS' management console. It d
    
  We have made use AWS' CloudTrail service to record activities being performed in our console.
  
- 	- This displays events such as: 
-		- User login, logout and unsuccessful authentication attempts
-		- Changes in access privilages
-		- Creation, modification & deletion of data
-	and many more...
+![Physical system architecture](Img/) 
 
-		
-    
+
 ## Attack Surface 3: Azure SQL Database
 ### Checklist:
 - TR 64: MT-01 **[done]**
 	
 	- Stong Password policy is enforced for user login
 
-For user accounts, it enforces default strong Password Policy. 
+For user accounts, it enforces default strong Password Policy.
+
+![Physical system architecture](Img/) 
 
 - TR 64: CS-03 **[done]**
 
@@ -115,6 +121,8 @@ Azure SQL database makes use of Transport Data Encyrption (TDE) which adds a lay
   - User credential are hashed in the database
 
 Using SHA256, we hashed the user's email and password and saved it to the SQL Database.
+
+![Physical system architecture](Img/) 
     
 - TR 64: NP-03 **[done]**
 
@@ -126,20 +134,23 @@ Azure SQL database will enforce encryption (SSL/TLS) at all times for all connec
 
   - Secure connectivity using whitelisting
    
-We have made use of Azure SQL database's firewall rules to only allow IP addresses, set in the SQL server, to access the database (essentially a whitelist). 
+We have made use of Azure SQL database's firewall rules to only allow IP addresses, set in the SQL server, to access the database (essentially a whitelist).
+
+![Physical system architecture](Img/) 
     
 - TR 64: RS-04 **[done]**
  
   - Back-up system deployed
 
 Azure SQL database, by default, automatically backs up the databases with no user action needed
+![Physical system architecture](Img/) 
 
 - TR 64: AU-01 **[done]**
 
   - Significant events recorded
 
 Azure SQL database has a event logging service which allows administrators to see the history of activities taking place within the server
-	     
+![Physical system architecture](Img/) 	     
 
 ## Attack Surface 4: ThingSpeak MQTT Broker
 - TR 64 : MT-01 **[done]**
@@ -147,12 +158,14 @@ Azure SQL database has a event logging service which allows administrators to se
 	- Strong password policies
 
 In order for a client to publish or subscribe to an MQTT broker, the client has to provide generated strong username and password for authentication and authorization.
+![Physical system architecture](Img/) 
 
 - TR 64 : NP-04 **[done]**
 
 	- Secure connectivity with MQTT
 
 We are sending our MQTT messages over port 8883 also known as TLS port. (Employing TLS when using MQTT)
+![Physical system architecture](Img/) 
 
 ## Attack Surface 5: Hardware
 
@@ -161,6 +174,8 @@ We are sending our MQTT messages over port 8883 also known as TLS port. (Employi
 	-  Provide a Temper resistant case for Hardware 
 
  By using Security Torx screws, we will secure our hardware by applying the screws into the box system. The screwdriver needed to unbox the system is very speciific. Thus, providing better security against physical tampering of the hardware. The tamper resistant case will also prevent our SD card in the ESP32-CAM to be stolen or destroyed.
+ 
+ ![Physical system architecture](Img/) 
     
 ## Attack Surface 6: System as a whole
 ### Checklist:
