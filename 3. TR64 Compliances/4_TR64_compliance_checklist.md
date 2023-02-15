@@ -50,7 +50,7 @@ Attacker will attempt a brute-force attack to login into the app. With the lock-
 
 2 Factor Authentication (2FA), first requiring a user to login with his/her register email and complex password. Second is an OTP sent, that has to be cross-verified in application, to their registered email as the form of 2FA.   
 
-![Physical system architecture](Img/) 
+![APP_AP-02](/Img/app_ap02.JPG) 
 
 ## Attack Surface 2: Amazon Web Service(AWS)
 ### Checklist:
@@ -58,7 +58,9 @@ Attacker will attempt a brute-force attack to login into the app. With the lock-
 
     - Secured connectivity is enforced
     
-Android Appliaction communicates with Amazon SES SMTP endpoint on port 587 (the communication port used by AWS SES for STARTTLS communication).
+Android Application communicates with Amazon SES SMTP endpoint on port 587 (the communication port used by AWS SES for STARTTLS communication).
+
+![APP_NP-03](/Img/AWS_DP-03.jpeg)
 
 - TR 64 : DP-04 **[done]**
 
