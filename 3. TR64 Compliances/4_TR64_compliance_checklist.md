@@ -5,7 +5,7 @@ TR64 is used as a guideline to safegaurd CIA for our IoT system. It provides hol
 Attack Surface|TR64 Reference|Description
 --------------|--------------|-----------
 Phone app|MT-01, CS-01, IA-01, AP-01, AP-02|Strong password policies, Employment of random number generator, Secure storage of user credentials, Protection against repeated attempts & Multi factor Authentication 
-Amazon Web Service|NP-04, DP-04, AP-02, MT-01, RS-03, UA-01|Secured connectivity is enforced, Access control mechanism, Multi-Factor Authentication, Strong password policies, able to withstand malicious attacks & significant events recorded
+Amazon Web Service|NP-03, DP-04, AP-02, MT-01, RS-03, UA-01|Secured connectivity is enforced, Access control mechanism, Multi-Factor Authentication, Strong password policies, able to withstand malicious attacks & significant events recorded
 Azure SQL Database|MT-01, CS-03, IA-01, NP-03, NP-04, RS-04, AU-01|Strong password policies, AES encryption, Client credential's stored securely, transport layer security employed, Whitelisting, regular backup of system data, significant events recorded
 Thingspeak MQTT Broker|MT-01, NP-04|Strong password policies, Secure connectivity based on industry best practices
 Hardware|AP-04|Tamper resistant hardware
@@ -19,7 +19,8 @@ Entire System|LP-01, LP-02, LP-07|Conducted threat modeling to identify threats,
 	- Stong Password policy is enforced for user login
 
 User enforces default strong Password Policy.
-![APP_MT-01](Img/) 
+
+![APP_MT-01](/Img/app_mt01.JPG)
 
 - TR 64 : CS-01 **[done]**
 
@@ -27,7 +28,7 @@ User enforces default strong Password Policy.
     
 The Phone application will generate an OTP and send it to Amazon Web Services' simple email service (SES), the generated OTP will then be sent to the user's email, user keys in the OTP and is able to enter the application. Confirming it is him/her.
 
-![APP_CS-01](Img/) 
+![APP_CS-01](/Img/app_cs01.JPG) 
 
 - TR 64 : IA-01 **[done]**
 
@@ -35,15 +36,13 @@ The Phone application will generate an OTP and send it to Amazon Web Services' s
  
 User will input their username and password at the login page, and as the SQL database has the hashed variant of the user's credentials, it (the Phone app) will convert the user inputted email and password (in plain text form) to its hashed form before comparing it with the hashed credentials stored in the database.
 
-![Physical system architecture](Img/) 
-
+![APP_IA-01](/Img/app_ia01.JPG) 
 - TR 64 : AP-01 **[done]**
 
 	- Lock-out mechanism employed to protect against repeated unauthorised attempts
 
 Attacker will attempt a brute-force attack to login into the app. With the lock-out mechanism, after 3 attempts the attacker wll be locked out and is no longer able to attempt anymore passwords. 
-
-![Physical system architecture](Img/) 
+![APP_AP-01](/Img/app_ap01.JPG) 
 
 - TR 64 : AP-02 **[done]**
 
@@ -55,7 +54,7 @@ Attacker will attempt a brute-force attack to login into the app. With the lock-
 
 ## Attack Surface 2: Amazon Web Service(AWS)
 ### Checklist:
-- TR 64 : NP-04 **[done]**
+- TR 64 : NP-03 **[done]**
 
     - Secured connectivity is enforced
     
